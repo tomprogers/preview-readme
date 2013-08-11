@@ -5,10 +5,10 @@ var fs       = require('fs')
 
 var app = connect();
 
-fs.readFile('Readme.md', {encoding: 'utf8'}, function(err, data) {
-  if (err) throw err;
-  renderer(data, function(err, rendered) {
-    app.use(function(req, res) {
+app.use(function(req, res) {
+  fs.readFile('Readme.md', {encoding: 'utf8'}, function(err, data) {
+    if (err) throw err;
+    renderer(data, function(err, rendered) {
       res.end(rendered);
     });
   });

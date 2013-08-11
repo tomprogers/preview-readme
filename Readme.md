@@ -11,3 +11,5 @@ $ npm install readme-preview
 cd ~/code/my-repo
 preview-readme
 ```
+
+See your rendered `Readme.md` at [http://localhost:5000](http://localhost:5000).
