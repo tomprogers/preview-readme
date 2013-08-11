@@ -1,0 +1,16 @@
+{
+  "name": "readme-preview",
+  "description": "preview GitHub Readmes before pushing.",
+  "version": "0.1.0",
+  "author": "Hanse",
+  "repository": "git://github.com/Hanse/readme-preview",
+  "main": "./index.js",
+  "bin": {
+    "preview-readme": "./bin/preview-readme"
+  },
+  "dependencies": {
+    "superagent": "0.15.x",
+    "jade": "0.34.x",
+    "connect": "2.8.x"
+  }
+}
