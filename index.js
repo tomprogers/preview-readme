@@ -3,10 +3,10 @@ var fs       = require('fs')
   , http     = require('http')
   , renderer = require('./lib/renderer');
 
-var app = connect();
+var app      = connect()
+  , token    = process.env.PREVIEW_README_API_KEY || process.argv[2];
 
-var token = process.env.PREVIEW_README_API_KEY || process.argv[2];
-
+app.use(connect.static('public'));
 app.use(function(req, res) {
   fs.readFile('Readme.md', {encoding: 'utf8'}, function(err, data) {
     if (err) throw err;
