@@ -5,10 +5,12 @@ var fs       = require('fs')
 
 var app = connect();
 
+var token = process.env.PREVIEW_README_API_KEY || process.argv[2];
+
 app.use(function(req, res) {
   fs.readFile('Readme.md', {encoding: 'utf8'}, function(err, data) {
     if (err) throw err;
-    renderer(data, function(err, rendered) {
+    renderer(data, token, function(err, rendered) {
       res.end(rendered);
     });
   });
