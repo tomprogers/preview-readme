@@ -19,6 +19,13 @@ preview-readme
 
 See your file, rendered at [http://localhost:5000](http://localhost:5000)
 
+Renders the first of these files that it finds in the current directory:
+
+1. `README`
+1. `README.md`
+1. `Readme.md`
+1. `README.markdown`
+
 
 ## API keys
 
