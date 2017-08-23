@@ -1,24 +1,32 @@
 # readme-preview
 
-Preview GitHub Readmes before pushing.
+Preview your README file as it will appear on npmjs.com, before publishing.
+
+
+## Installation
 
 ```bash
-$ npm install readme-preview
+$ npm install tomprogers/preview-readme
 ```
 
+
 ## Usage
+
 ```bash
 cd ~/code/my-repo
 preview-readme
 ```
 
-See your rendered `Readme.md` at [http://localhost:5000](http://localhost:5000).
+See your file, rendered at [http://localhost:5000](http://localhost:5000)
+
 
 ## API keys
-To get more than 60 requests per hour, you can go to [GitHub Applications Settings](https://github.com/settings/applications) and create a new Personal Access Token. Put this in your `.bash_profile`
+
+If you need more than 60 renders per hour, you can get 5000 per hour by going to [GitHub Applications Settings](https://github.com/settings/applications) and create a new Personal Access Token. Then, put this in your `.bash_profile` so that preview-readme can use it:
+
 ```
+# ~/.bash_profile
 README_PREVIEW_API_KEY=yourapitoken
 ```
-and `readme-preview` will use it. This will give you 5000 requests.
 
-You can also send it as an argument: `readme-preview <token>`.
+You can also send it as an argument: `preview-readme <token>`.
