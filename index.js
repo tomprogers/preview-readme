@@ -32,5 +32,5 @@ app.use(function(req, res) {
 });
 
 http.createServer(app).listen(5000, function() {
-  console.log("Readme.md rendered on localhost:5000");
+  console.log("previews of README available at http://localhost:5000");
 });
