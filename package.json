@@ -1,9 +1,9 @@
 {
   "name": "readme-preview",
-  "description": "preview GitHub Readmes before pushing.",
+  "description": "Preview README markdown as it will appear on npmjs.com",
   "version": "0.2.0",
-  "author": "Hanse",
-  "repository": "git://github.com/Hanse/readme-preview",
+  "author": "tomprogers",
+  "repository": "git://github.com/tomprogers/readme-preview",
   "main": "./index.js",
   "bin": {
     "preview-readme": "./bin/preview-readme"
