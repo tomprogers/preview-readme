@@ -4,9 +4,9 @@ var fs       = require('fs')
   , renderer = require('./lib/renderer');
 
 var app      = connect()
-  , token    = process.env.PREVIEW_README_API_KEY || process.argv[2];
+  , token    = process.env.README_PREVIEW_API_KEY || process.argv[2];
 
-app.use(connect.static('public'));
+// app.use(connect.static('public'));
 app.use(function(req, res) {
   var readmeFiles = ["README", "README.md", "Readme.md", "README.markdown"]
     , chosenReadme;
