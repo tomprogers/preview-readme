@@ -29,7 +29,6 @@ app.use(function(req, res) {
       res.end(rendered);
     });
   })
-
 });
 
 http.createServer(app).listen(5000, function() {
