@@ -9,8 +9,8 @@
     "preview-readme": "./bin/preview-readme"
   },
   "dependencies": {
-    "superagent": "0.15.x",
+    "connect": "2.8.x",
     "jade": "0.34.x",
-    "connect": "2.8.x"
+    "superagent": "0.15.x"
   }
 }
