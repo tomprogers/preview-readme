@@ -13,5 +13,8 @@
     "jade": "0.34.x",
     "markdown-it": "^8.4.1",
     "superagent": "0.15.x"
+  },
+  "scripts": {
+  	"start": "node index.js"
   }
 }
